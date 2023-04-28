@@ -1,0 +1,12 @@
+D:\.NetCoreKampı\CoreDemo\EntityLayer\bin\Debug\net7.0\EntityLayer.deps.json
+D:\.NetCoreKampı\CoreDemo\EntityLayer\bin\Debug\net7.0\EntityLayer.dll
+D:\.NetCoreKampı\CoreDemo\EntityLayer\bin\Debug\net7.0\EntityLayer.pdb
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\EntityLayer.csproj.AssemblyReference.cache
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\EntityLayer.AssemblyInfoInputs.cache
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\EntityLayer.AssemblyInfo.cs
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\EntityLayer.csproj.CoreCompileInputs.cache
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\EntityLayer.dll
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\refint\EntityLayer.dll
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\EntityLayer.pdb
+D:\.NetCoreKampı\CoreDemo\EntityLayer\obj\Debug\net7.0\ref\EntityLayer.dll
