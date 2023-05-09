@@ -1,0 +1,89 @@
+﻿@*@model CoreDemo.Models.CitysViewModel*@
+@model EntityLayer.Concrate.Writer
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UsersLayout.cshtml";
+}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+<section class="main-content-w3layouts-agileits">
+	<div class="container">
+		<h3 class="tittle">Yazar Kayıt Sayfası</h3>
+		<div class="inner-sec">
+			<div class="login p-5 bg-light mx-auto mw-100">
+				@using (Html.BeginForm("Index", "Register",FormMethod.Post))
+				{
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom01">Adı Soyadı</label>
+							@Html.TextBoxFor(x => x.Writer_Name , new { @class = "form-control"})
+							@Html.ValidationMessageFor(x => x.Writer_Name,"" , new { @class = "text-danger"})
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom02">E-Mail</label>
+							@Html.TextBoxFor(x => x.Writer_Mail , new { @class = "form-control"})
+							@Html.ValidationMessageFor(x => x.Writer_Mail,"" , new { @class = "text-danger"})
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword1 mb-2">Şifre</label>
+							@Html.TextBoxFor(x => x.Writer_Password , new { @class = "form-control" , @id="password" , @type="password"})
+							@Html.ValidationMessageFor(x => x.Writer_Password,"" , new { @class = "text-danger"})
+						</div>
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword2 mb-2">Şifreyi Tekrarla</label>
+							<input type="password" class="form-control" id="password-confirm" placeholder="" required="">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword2 mb-2">Resim</label>
+							@Html.TextBoxFor(x => x.Writer_Image , new { @class = "form-control"})
+							@Html.ValidationMessageFor(x => x.Writer_Image,"" , new { @class = "text-danger"})
+						</div>
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword2 mb-2">Şehir</label>
+							@Html.DropDownList("City_ID", (IEnumerable<SelectListItem>)ViewBag.CityList, "--Select--", new { @class = "form-control" })<br />
+							<p class="text-danger">@ViewBag.wrong</p>
+						</div>
+					</div><br />
+					<p>
+						<input type="checkbox" />
+						<a id="btn1" href="#">Bütün Kullanım Koşullarını Okudum. Onaylıyorum.</a>
+					</p><br />
+					<button type="submit" class="btn btn-primary submit mb-4 form-control" id="login-button">Kayıt Ol</button>
+				}
+
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	const passwordInput = document.getElementById("password");
+	const passwordConfirmInput = document.getElementById("password-confirm");
+	const loginButton = document.getElementById("login-button");
+
+	function enableLoginButton() {
+		if (passwordInput.value == passwordConfirmInput.value) {
+			loginButton.disabled = false;
+			passwordInput.style.borderColor = "aliceblue";
+			passwordConfirmInput.style.borderColor = "aliceblue";
+		} else {
+			loginButton.disabled = true;
+			passwordInput.style.borderColor  =  "red";
+			passwordConfirmInput.style.borderColor = "red";
+		}
+	}
+
+	passwordInput.addEventListener("input", enableLoginButton);
+	passwordConfirmInput.addEventListener("input", enableLoginButton);
+</script>
+<script>
+	$('#btn1').click(function () {
+		swal("Kullanım Koşulları!",".   Sistemimizde verdiğimiz mail adresi üzerinden bilgi ve haber e-postaları spam ölçüsüne varmadan gönderilmeye devam edecektir . \n" +
+		".  Eğer e-posta bülteninden çıkmak isterseniz mail ileti dizisini durdurabilirsiniz .	 \n"+
+	".  Şifre ve mail adresleriniz  şifrelenmiş formatta herhangi bir kullanıcının göremeyeceği şekilde veritabanlarımızda saklanmaktadır.");
+	})
+</script>

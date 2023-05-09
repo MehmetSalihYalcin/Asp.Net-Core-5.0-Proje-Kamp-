@@ -1,0 +1,17 @@
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.runtimeconfig.json
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\bin\Debug\net7.0\EntityLayer.dll
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\bin\Debug\net7.0\EntityLayer.pdb
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
+D:\.NetCoreKampı\CoreDemo\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll

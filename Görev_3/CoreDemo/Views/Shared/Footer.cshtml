@@ -1,0 +1,74 @@
+﻿
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+				<h3>Hakkımızda</h3>
+				<p>Blog (Türkçe: ağ günlüğü, günce) veya Weblog (Türkçe: Ağ kütüğü) teknik bilgi gerektirmeden, 
+					kendi istedikleri şeyleri, kendi istedikleri şekilde yazan insanların oluşturabildikleri, günlüğe 
+					benzeyen web siteleridir. Genellikle güncelden eskiye doğru sıralanmış yazı ve yorumların
+					yayınlandığı, web tabanlı bir yayını belirtir...</p>
+				<div class="read">
+					<a href="/About/Index/" class="btn btn-primary read-m">Devamını Oku...</a>
+				</div>
+			</div>
+			<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+
+
+				@await Component.InvokeAsync("BlogLast3Post")
+
+			</div>
+			<!-- subscribe -->
+			<div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
+
+				@await Html.PartialAsync("~/Views/NewLetter/SubScribeMail.cshtml")
+
+				<!-- //subscribe -->
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer-cpy text-center">
+			<div class="footer-social">
+				<div class="copyrighttop">
+					<ul>
+						<li class="mx-3">
+							<a class="facebook" href="#">
+								<i class="fab fa-facebook-f"></i>
+								<span>Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a class="facebook" href="#">
+								<i class="fab fa-twitter"></i>
+								<span>Twitter</span>
+							</a>
+						</li>
+						<li class="mx-3">
+							<a class="facebook" href="#">
+								<i class="fab fa-google-plus-g"></i>
+								<span>Google+</span>
+							</a>
+						</li>
+						<li>
+							<a class="facebook" href="#">
+								<i class="fab fa-pinterest-p"></i>
+								<span>Pinterest</span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="w3layouts-agile-copyrightbottom">
+				<p>
+					© @DateTime.Now.Year Asp.Net Core 5.0 Proje Kampı | Bu Sitenin Tüm Hakları Saklısır
+				</p>
+
+			</div>
+		</div>
+
+		<!-- //footer -->
+
+
+	</div>
+</footer>

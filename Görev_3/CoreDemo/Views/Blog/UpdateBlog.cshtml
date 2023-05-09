@@ -1,0 +1,61 @@
+﻿@using EntityLayer.Concrate
+@model Blog
+@{
+    ViewData["Title"] = "UpdateBlog";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title text-center">Blog Ekleme Paneli</h1><br /><hr />
+            @using (Html.BeginForm("UpdateBlog", "Blog", FormMethod.Post))
+				{
+                @Html.HiddenFor(x => x.Blog_ID)
+                <div class="form-group">
+                    <label for="exampleInputName1">Blog Başlığı</label>
+                    @Html.TextBoxFor(x => x.Blog_Title,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x => x.Blog_Title)
+                </div>
+                <div class="form-group">
+                    <label>Görsel</label>
+                    @*                    <input type="text" name="Blog_Image" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                    <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image" name="Blog_Image">
+                    <span class="input-group-append">
+                    <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                    </span>
+                </div>*@
+                    @Html.TextBoxFor(x => x.Blog_Image,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x => x.Blog_Image)
+                </div>
+                <div class="form-group">
+                    <label>Blog Küçük Görsel</label>
+                    @*      <input type="text" name="Blog_ThumbNailImage" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                    <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image" name="Blog_ThumbNailImage">
+                    <span class="input-group-append">
+                    <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                    </span>
+                </div>*@
+                    @Html.TextBoxFor(x => x.Blog_ThumbNailImage,new {@class="form-control"})
+                    @Html.ValidationMessageFor(x => x.Blog_ThumbNailImage)
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputCity1">Kategori</label>
+                    @Html.DropDownListFor(x => x.Category_ID , (List<SelectListItem>)ViewBag.cv , "-- Kategori Seçiniz --",new {@class="form-control"})
+                    <p class="text-danger">@ViewBag.wrong</p>
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea1">Blog İçeriği</label>
+                    @Html.TextAreaFor(x => x.Blog_Content,new {@class="form-control",@row="4"})
+                    @Html.ValidationMessageFor(x => x.Blog_Content)
+                </div>
+                <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+            }
+        </div>
+    </div>
+</div>
+
+
